@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="css/Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Tienda Fiao</title>
+    <link rel="stylesheet" href="css/Style1.css">
 </head>
 <body>
+    <!-- Header -->
     <header id="Inicio">
         <div class="logo_barra">
             <div class="logo">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/fondo2.png" alt="logo">
             </div>
             <div class="barra">
                 <ul>
                     <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#somos">Quienes somos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
                     <li><a href="#productos">Productos</a></li>
                 </ul>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
             </div>
         </div>
         <div class="heade">
@@ -30,133 +35,500 @@
             </div>
         </div>
     </header>
-    <div class="somos" id="somos">
-        <div class="con">
-            <h1>¿Quiénes somos?</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum animi voluptas praesentium inventore temporibus, accusamus nam molestias! Nobis recusandae, veniam doloremque voluptas officia, natus nemo, quos animi impedit atque maiores?</h3>
-            <h1>¿Qué ofrecemos?</h1>
-            <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rerum blanditiis iste sit accusantium. Aspernatur at veniam eligendi facere quasi ex autem, adipisci nostrum molestiae molestias, delectus reprehenderit, minima recusandae!
-            </h3>
-            <div class="boto">
-                <button class="uno">Regístrate</button>
-                <button>Iniciar sesión</button>
+
+    <!-- Sección de Categorías -->
+    <section class="categorias" id="categorias">
+        <h2>Categorías</h2>
+        <div class="categorias-grid">
+            <div class="categoria">
+                <a href="#electronica"><img src="img/8.png" alt="Electrónica">
+                    <h3>Electrónica</h3></a>
             </div>
-        </div>
-        <div class="somos-img animar animar-derecha">
-            <img src="img/3__2_-removebg-preview.png" alt="">
-        </div>
-    </div>
-    <section class="productos" id="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="productos-grid ">
-            <div class="producto animar animar animar-derecha">
-                <img src="img/hand-holding-photo-camera.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <button onclick="toggleDetails(1)">Ver más</button>
-                <div class="detalles" id="detalles-1">
-                    <p><strong>Modelo:</strong> Modelo 1</p>
-                    <p><strong>Precio:</strong> $100</p>
-                    <p><strong>Color:</strong> Rojo</p>
-                </div>
+            <div class="categoria">
+                <a href="#ropa">
+                    <img src="img/13.png" alt="Ropa">
+                <h3>Ropa</h3>
+                </a>
             </div>
-            <div class="producto animar animar-abajo">
-                <img src="img/double-bed-with-white-pillows.jpg" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <button onclick="toggleDetails(2)">Ver más</button>
-                <div class="detalles" id="detalles-2">
-                    <p><strong>Modelo:</strong> Modelo 2</p>
-                    <p><strong>Precio:</strong> $150</p>
-                    <p><strong>Color:</strong> Azul</p>
-                </div>
+            <div class="categoria">
+                <a href="#hogar"><img src="img/23.png" alt="Hogar">
+                    <h3>Hogar</h3></a>
             </div>
-            <div class="producto animar animar-abajo">
-                <img src="img/19784.jpg" alt="Producto 3">
-                <h3>Producto 3</h3>
-                <button onclick="toggleDetails(3)">Ver más</button>
-                <div class="detalles" id="detalles-3">
-                    <p><strong>Modelo:</strong> Modelo 3</p>
-                    <p><strong>Precio:</strong> $200</p>
-                    <p><strong>Color:</strong> Verde</p>
-                </div>
-            </div>
-            <div class="producto animar animar-derecha">
-                <img src="img/elegant-watch-with-silver-golden-chain-isolated.jpg" alt="Producto 4">
-                <h3>Producto 4</h3>
-                <button onclick="toggleDetails(4)">Ver más</button>
-                <div class="detalles" id="detalles-4">
-                    <p><strong>Modelo:</strong> Modelo 4</p>
-                    <p><strong>Precio:</strong> $250</p>
-                    <p><strong>Color:</strong> Negro</p>
-                </div>
+            <div class="categoria">
+                <a href="#deporte"><img src="img/32.png" alt="Deportes">
+                    <h3>Deportes</h3></a>
             </div>
         </div>
     </section>
-    <footer>
-            <div class="footer-seccion">
-                <h4>Contacto</h4>
-                <p>Email: info@ejemplo.com</p>
-                <p>Teléfono: +123 456 7890</p>
+
+    <!-- Sección de Productos -->
+    <section class="productos" id="produtos">
+        <h2>Productos Destacados</h2>
+        <div class="carrusel-container">
+            <button class="carrusel-btn anterior">&lt;</button>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/5.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$100</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/9.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$150</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/16.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$200</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/32.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/27.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/36.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/11.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/20.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
             </div>
-            <div class="footer-seccion">
-                <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-            </div>
-            <div class="footer-seccion" id="redes">
-                <h4>Redes sociales</h4>
-                <ul class="footer-redes">
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="img/facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="img//gorjeo (1).png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img src="img/instagram.png" alt="">
-                        </a>
-                    </li>
-                </ul>
+            <button class="carrusel-btn siguiente">&gt;</button>
         </div>
-        
+    </section>
+
+    <!--electricos-->
+
+    <section class="productos" id="electronica">
+        <h2>Electronica</h2>
+        <div class="carrusel-container">
+            <button class="carrusel-btn anterior">&lt;</button>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/9.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$100</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/10.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$150</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/11.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$200</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/4.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/5.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/6.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/7.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/8.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+            </div>
+            <button class="carrusel-btn siguiente">&gt;</button>
+        </div>
+    </section>
+    
+    <!--ropa-->
+    <section class="productos" id="ropa">
+        <h2>Ropa</h2>
+        <div class="carrusel-container">
+            <button class="carrusel-btn anterior">&lt;</button>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/12.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$100</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/13.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$150</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/14.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$200</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/15.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/16.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/17.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/18.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/19.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+            </div>
+            <button class="carrusel-btn siguiente">&gt;</button>
+        </div>
+    </section>
+    <!--hogar-->
+    <section class="productos" id="hogar">
+        <h2>Hogar</h2>
+        <div class="carrusel-container">
+            <button class="carrusel-btn anterior">&lt;</button>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/20.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$100</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/21.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$150</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/22.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$200</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/23.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/24.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/25.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/26.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/27.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+            </div>
+            <button class="carrusel-btn siguiente">&gt;</button>
+        </div>
+    </section>
+    <!--deporte-->
+    <section class="productos" id="deporte">
+        <h2>Deportes</h2>
+        <div class="carrusel-container">
+            <button class="carrusel-btn anterior">&lt;</button>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/29.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$100</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/30.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$150</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/31.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$200</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/32.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/33.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/34.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/35.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+                <div class="producto">
+                    <img src="img/36.png" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$250</p>
+                    <p class="descripcion">Descripción breve del producto.</p>
+                    <button>Comprar</button>
+                    <button class="detalles">Ver detalles</button>
+                </div>
+            </div>
+            <button class="carrusel-btn siguiente">&gt;</button>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-seccion">
+            <h4>Contacto</h4>
+            <p>Email: info@tiendaonline.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+        <div class="footer-seccion">
+            <h4>Enlaces útiles</h4>
+            <ul>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-seccion">
+            <h4>Redes sociales</h4>
+            <ul class="footer-redes" id="redes" >
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/gorjeo (1).png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
+
     <script>
-    function toggleDetails(productId) {
-        var detalles = document.getElementById('detalles-' + productId);
-        if (detalles.style.display === "none" || detalles.style.display === "") {
-            detalles.style.display = "block"; // Muestra los detalles
-        } else {
-            detalles.style.display = "none"; // Oculta los detalles
+        function toggleDetails(productId) {
+            var detalles = document.getElementById('detalles-' + productId);
+            if (detalles.style.display === "none" || detalles.style.display === "") {
+                detalles.style.display = "block"; // Muestra los detalles
+            } else {
+                detalles.style.display = "none"; // Oculta los detalles
+            }
         }
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        const elementos = document.querySelectorAll(".animar");
-    
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const elemento = entry.target;
-                    if (elemento.classList.contains("animar-izquierda")) {
-                        elemento.classList.add("slide-in-left");
-                    } else if (elemento.classList.contains("animar-derecha")) {
-                        elemento.classList.add("slide-in-right");
-                    } else if (elemento.classList.contains("animar-abajo")) {
-                        elemento.classList.add("slide-in-bottom");
+        document.addEventListener("DOMContentLoaded", function () {
+            const elementos = document.querySelectorAll(".animar");
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const elemento = entry.target;
+                        if (elemento.classList.contains("animar-izquierda")) {
+                            elemento.classList.add("slide-in-left");
+                        } else if (elemento.classList.contains("animar-derecha")) {
+                            elemento.classList.add("slide-in-right");
+                        } else if (elemento.classList.contains("animar-abajo")) {
+                            elemento.classList.add("slide-in-bottom");
+                        }
+                      // observer.unobserve(elemento); // Deja de observar después de animar
                     }
-                  // observer.unobserve(elemento); // Deja de observar después de animar
-                }
+                });
+            }, {
+                threshold: 0.5, // Activa la animación cuando el 50% del elemento es visible
             });
-        }, {
-            threshold: 0.5, // Activa la animación cuando el 50% del elemento es visible
+        
+            elementos.forEach((elemento) => {
+                observer.observe(elemento);
+            });
         });
-    
-        elementos.forEach((elemento) => {
-            observer.observe(elemento);
+        document.addEventListener('DOMContentLoaded', () => {
+            // Selecciona todos los contenedores de carrusel
+            const carruseles = document.querySelectorAll('.carrusel-container');
+        
+            carruseles.forEach((carruselContainer) => {
+                const carrusel = carruselContainer.querySelector('.productos-grid');
+                const anteriorBtn = carruselContainer.querySelector('.anterior');
+                const siguienteBtn = carruselContainer.querySelector('.siguiente');
+                const productoWidth = carruselContainer.querySelector('.producto').offsetWidth + 20; // Ancho del producto + margen
+        
+                let scrollAmount = 0;
+        
+                anteriorBtn.addEventListener('click', () => {
+                    scrollAmount = Math.max(scrollAmount - productoWidth, 0);
+                    carrusel.style.transform = `translateX(-${scrollAmount}px)`;
+                });
+        
+                siguienteBtn.addEventListener('click', () => {
+                    const maxScroll = carrusel.scrollWidth - carrusel.clientWidth;
+                    scrollAmount = Math.min(scrollAmount + productoWidth, maxScroll);
+                    carrusel.style.transform = `translateX(-${scrollAmount}px)`;
+                });
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
