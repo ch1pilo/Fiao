@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgb(225, 201, 245);
+    background-color: #4b6282;
     padding: 20px 0;
     text-align: center;
     align-items: center;
@@ -26,7 +26,7 @@ header p{
     text-align: center;
     z-index: 100;
     font-size: 70px;
-    color: rgb(51, 6, 90);
+    color: #06225e;
     font-family: 'Dancing Script', cursive;
     left: 0;
     background-color: #ffffffa6;
@@ -34,7 +34,7 @@ header p{
 
 .logo_barra {
     display: flex;
-    background-color: rgb(104, 63, 105);
+    background-color: #071739;
     position: fixed;
     top: 0;
     width: 100%;
@@ -60,7 +60,7 @@ header p{
 }
 
 .barra a {
-    color: rgb(43, 10, 49);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
 }
@@ -79,7 +79,7 @@ header p{
 
 .busqueda button {
     padding: 10px 20px;
-    background-color: rgb(43, 10, 49);
+    background-color: #010d27;
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,7 +96,7 @@ header p{
 .categorias h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: rgb(43, 10, 49);
+    color: #010d27;
 }
 
 .categorias-grid {
@@ -137,7 +137,7 @@ header p{
 /* Sección de Productos */
 .productos {
     padding: 50px 20px;
-    background-color: #550b36;
+    background-color: #a4b5c4;
     text-align: center;
 }
 
@@ -178,7 +178,7 @@ header p{
 }
 
 .carrusel-btn {
-    background-color: rgba(43, 10, 49, 0.7);
+    background-color: #34485e96;
     color: white;
     border: none;
     padding: 10px;
@@ -197,7 +197,7 @@ header p{
 }
 
 .carrusel-btn:hover {
-    background-color: rgba(43, 10, 49, 0.9);
+    background-color: #071739;
 }
 
 .anterior {
@@ -222,7 +222,7 @@ header p{
 
 .producto .precio {
     font-size: 1.5em;
-    color: #550b36;
+    color: #071739;
     margin: 10px 0;
 }
 
@@ -230,11 +230,12 @@ header p{
     padding: 0 15px 15px;
     margin: 0;
     color: #666;
+    height: 120px;
 }
 
 .producto button {
     padding: 10px 20px;
-    background-color: rgb(43, 10, 49);
+    background-color: #071739;
     color: white;
     border: none;
     border-radius: 5px;
@@ -245,8 +246,8 @@ header p{
 
 .producto .detalles {
     background-color: transparent;
-    color: rgb(43, 10, 49);
-    border: 1px solid rgb(43, 10, 49);
+    color: #071739;
+    border: 1px solid #071739;
 }
 
 /* Footer */
@@ -279,7 +280,7 @@ footer {
     font-size: 18px;
     text-align: center;
     width: 100%;
-    color: #ff6f61;
+    color: #a68868;
 }
 
 .footer-seccion p, .footer-seccion ul {
@@ -324,20 +325,22 @@ footer {
     border-top: solid 3px #fff;
 }
 #electronica{
-    background-color: rgb(225, 201, 245);
+    background-color: #4b6282;
+
 }
 #ropa{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     
 }
 #ropa h2{
-    color: #550b36;
+    color: #071739;
 }
 #hogar{
-    background-color:   rgb(43, 10, 49);
+    background-color: #a4b5c4;
+
 }
 #deporte{
-    background-color: rgb(225, 201, 245);
+    background-color: #4b6282;
 }
 a{
     text-decoration: none;
