@@ -26,7 +26,7 @@ header p{
     text-align: center;
     z-index: 100;
     font-size: 70px;
-    color: #06225e;
+    color: #522aa5;
     font-family: 'Dancing Script', cursive;
     left: 0;
     background-color: #ffffffa6;
@@ -34,7 +34,7 @@ header p{
 
 .logo_barra {
     display: flex;
-    background-color: #071739;
+    background: linear-gradient(90deg, #06225e, #650ce2);
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,7 +47,7 @@ header p{
 
 .logo img {
     width: 70px;
-    height: 50px;
+    height: 70px;
 }
 
 .barra ul {
@@ -79,7 +79,7 @@ header p{
 
 .busqueda button {
     padding: 10px 20px;
-    background-color: #010d27;
+    background: linear-gradient(90deg, #09235c, #350b6e);
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,7 +96,7 @@ header p{
 .categorias h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #010d27;
+    color: #351a69;
 }
 
 .categorias-grid {
@@ -174,11 +174,11 @@ header p{
 
 .producto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .carrusel-btn {
-    background-color: #34485e96;
+    background: linear-gradient(30deg, #06225e63, #5207bbab);
     color: white;
     border: none;
     padding: 10px;
@@ -235,7 +235,7 @@ header p{
 
 .producto button {
     padding: 10px 20px;
-    background-color: #071739;
+    background-color: #522aa5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -333,7 +333,7 @@ footer {
     
 }
 #ropa h2{
-    color: #071739;
+    color: #351a69;
 }
 #hogar{
     background-color: #a4b5c4;
