@@ -414,7 +414,7 @@ a{
 @media (max-width: 768px) {
     header p{
         top: 57%;
-        font-size: 10px;
+        font-size: 60px;
         background-color: #ffffffa6;
     }
     .logo_barra {
